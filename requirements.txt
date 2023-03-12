@@ -1,0 +1,4 @@
+autoscraper
+telebot
+tinydb
+configparser
