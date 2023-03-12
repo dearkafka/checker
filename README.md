@@ -20,7 +20,7 @@ Checker is designed to be used as a command-line tool. After installing the pack
 checker path/to/config.ini
 ```
 
-Here, `path/to/config.ini` is the path to a configuration file that Checker uses to determine which website to scrape and how to send notifications. The configuration file should be in the INI format, with sections and keys defined as follows:
+Here, `path/to/config.ini` is the path to a configuration file that Checker uses to determine which website to scrape and how to send notifications. The configuration file should be in the INI format, see [example](.config.ini); with sections and keys defined as follows:
 
 ```
 [Scraper]
@@ -66,6 +66,8 @@ max_error_delay_min = 12
 ```
 
 The `[Time]` section specifies the time-related parameters for the Checker. The `startup_delay_sec` key specifies the number of seconds to wait before starting the first scrape. The `min_run_delay_min` and `max_run_delay_min` keys specify the minimum and maximum number of minutes to wait between scrapes. The `min_error_delay_min` and `max_error_delay_min` keys specify the minimum and maximum number of minutes to wait before retrying a scrape in case of an error.
+
+Checker provides onlyn new data using very convinient tinyDB so it wont send same twice to your Telegram.
 
 ## systemd Service
 
