@@ -1,4 +1,4 @@
-![checker](https://socialify.git.ci/dearkafka/checker/image?description=1&descriptionEditable=Blazingly%20simple%20any%20website%20scrape%2C%20compare%20with%20db%2C%20notify%20in%20Telegram%20&font=Jost&language=1&name=1&owner=1&pattern=Diagonal%20Stripes&theme=Light)
+![checker](https://socialify.git.ci/dearkafka/checker/image?description=1&descriptionEditable=Blazingly%20simple%20any%20website%20scrape%2C%20compare%20with%20db%2C%20notify%20in%20Telegram%20&font=Jost&language=1&name=1&owner=1&pattern=Plus&theme=Light)
 # Checker
 
 Checker is a Python package that checks websites for new items and sends notifications via Telegram.
