@@ -35,7 +35,7 @@ url1 = https://example.com/item1
 url2 = https://example.com/item2
 ```
 
-Before anything, you need to train scraper.
+Before anything, you need to train scraper.  
 The `[WantedList]` section lists the URLs of the items from the `[Scraper]` so that simiar items would be recognised in future. It's like a training data for scraper and it's what you would like to receive if you scraped manually. You can add as many items as you like, using keys numbered from `url1` to `urln`.
 
 ```
@@ -50,11 +50,9 @@ The `[File]` section specifies the filename to use for the scraper cache/scrape 
 bot_token = YOUR_BOT_TOKEN
 chat_id = YOUR_CHAT_ID
 startup_message = Hello!
-
 ```
 
 The `[Telegram]` section specifies the Telegram bot token and chat ID to use for sending notifications. You can obtain a bot token by talking to the BotFather in Telegram. The chat ID can be obtained by sending a message to your bot and inspecting the `chat` object in the JSON response. The `startup_message` key specifies a message to send when the Checker is started.
-
 
 ```
 [Time]
@@ -67,7 +65,7 @@ max_error_delay_min = 12
 
 The `[Time]` section specifies the time-related parameters for the Checker. The `startup_delay_sec` key specifies the number of seconds to wait before starting the first scrape. The `min_run_delay_min` and `max_run_delay_min` keys specify the minimum and maximum number of minutes to wait between scrapes. The `min_error_delay_min` and `max_error_delay_min` keys specify the minimum and maximum number of minutes to wait before retrying a scrape in case of an error.
 
-Checker provides onlyn new data using very convinient tinyDB so it wont send same twice to your Telegram.
+Checker provides only new data using very convenient tinyDB so it wont send same twice to your Telegram.
 
 ## systemd Service
 
@@ -81,14 +79,12 @@ checker-service --create path/to/config.ini
 
 This will create a new systemd service called `checker.service` that uses the specified configuration file. It will start immediately.
 
-
 ## Debug Logging
 
 If you want to enable debug logging for Checker, you can pass the `--debug` flag when running the `checker` command:
 
 ```
 checker --debug path/to/config.ini
-
 ```
 
 This will output more detailed log messages to specified log file (stated in config.ini)
